@@ -14,6 +14,10 @@ const userSchema = mongoose.Schema({
         type: String,
         required: [true, "Please add the user password"]
     },
+    isAdmin: {
+        type: Boolean,
+        default: false, // Regular users are not admins by default
+    },
 }, {
     timestamps: true,
 });
