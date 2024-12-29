@@ -12,6 +12,7 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/admin/products", require("./routes/adminProductRoutes"));
 app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/cart/products", require("./routes/cartRoutes"));
 app.use(errorHandler);
 
 app.listen(port, () => {
